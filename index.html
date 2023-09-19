@@ -22,7 +22,7 @@
     <!--Assets-->
     <a-assets>
       <a-asset-item id="shooter" src="./models/soldier/scene.gltf"></a-asset-item>
-      <a-asset-item id="collider" src="./models/navmesh.gltf"></a-asset-item>
+      
 
       <!-- <img id="wallTexture" src="./images/wall2.jpg"> -->
       <audio id="shoot" src="./sounds/splash.mp3"></audio>
@@ -44,23 +44,28 @@
     <a-entity light="type: directional; color: #EEE; intensity: 1" position="-1 1 0"></a-entity>
 
     <!--Camera and Cursor-->
-    <a-entity id="camera-rig" movement-controls="speed: 0.2; constrainToNavMesh: true" position="0 0 5">
-      <a-entity id="camera" camera position="0 1.6 0"
-      look-controls="pointerLockEnabled: false">
-        <a-entity id="weapon" gltf-model="#shooter" position="0.17 -2.76 -0.08" rotation="-20 -145 20" scale="0.05 0.05 0.05"
-          player-movement>
-        </a-entity>
-        <a-cursor></a-cursor>
-      </a-entity>
-    </a-entity>
+
+
+
+
+
+
+    
 
 
     <!--Bullets-->
     <a-entity bullets="position:0 0 -5"></a-entity>
 
     <!-- Navigation Mesh -->
-    <a-entity id="navigation-mesh" position="0 -1 0" gltf-model="#collider" visible="false" nav-mesh>
-    </a-entity>
+
+
+
+
+
+
+
+
+    
 
     <!--Ground-->
     <a-plane id="ground" position="0 0 -15" rotation="-90 0 0" height="50" width="50" static-body
